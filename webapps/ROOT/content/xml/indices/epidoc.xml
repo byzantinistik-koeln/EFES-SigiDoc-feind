@@ -82,7 +82,7 @@
 
       
 
-      <div xml:id="titles">
+      <!--<div xml:id="titles">
         <head n="2">Titles</head>
 
         <div type="headings">
@@ -93,7 +93,7 @@
         </div>
 
         
-      </div>
+      </div>-->
 
       <!--Religious appellatives-->
 
@@ -170,10 +170,8 @@
 
       <!--Words and legend’s features-->
 
-     
-        
 
-      <div xml:id="lemma">
+      <!--<div xml:id="lemma">
         <head n="5">Lemmata</head>
 
         <div type="headings">
@@ -185,7 +183,7 @@
         </div>
 
         
-      </div>
+      </div>-->
 <!--
       <div xml:id="legendsCases">
         <head n="5">Legends’ cases</head>
@@ -227,7 +225,7 @@
 
       </div>
       
-      <div xml:id="symbols">
+      <!--<div xml:id="symbols">
         <head n="1">Symbols</head>
         
         <div type="headings">
@@ -238,7 +236,7 @@
           </list>
         </div>
         
-      </div>
+      </div>-->
 
     </body>
   </text>
