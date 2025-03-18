@@ -51,7 +51,7 @@
   
   <xsl:template match="str[@name='inv']" mode="text-index">
 
-    <xsl:variable name="filename" select="./preceding-sibling::str[@name='file_path']" />
+    <xsl:variable name="filename" select="substring-after(./preceding-sibling::str[@name='file_path'],'/')" />
     <xsl:variable name="collectionname" select="./preceding-sibling::arr[@name='collection']"/>
     <td>
       <a href="{kiln:url-for-match($match_id, ($language, $filename), 0)}">
@@ -74,11 +74,18 @@
   </xsl:template>
 
   <xsl:template match="arr[@name='document_title']" mode="text-index">
-    <td><xsl:value-of select="string-join(str, '; ')" /></td>
+    <td>
+      <xsl:choose>
+        <xsl:when test="./str[contains(.,concat($language, '|'))]">
+          <xsl:value-of select="substring-after(./str[contains(.,concat($language, '|'))],'|')" />
+        </xsl:when>
+        <xsl:otherwise><xsl:value-of select="substring-after(./str[contains(.,'en|')],'|')" /></xsl:otherwise>
+      </xsl:choose></td>
   </xsl:template>
 
   <xsl:template match="arr[@name='author']" mode="text-index">
-    <td><xsl:value-of select="string-join(str, '; ')" /></td>
+    <td>
+      <xsl:value-of select="string-join(str, '; ')" /></td>
   </xsl:template>
 
   <xsl:template match="arr[@name='editor']" mode="text-index">
