@@ -151,7 +151,7 @@
     <xsl:variable name="short-filepath" select="substring-after(str[@name = 'file_path'], '/')"/>
     <div class="result">
       <div class="result-headline">
-        <p style="width: 85%">
+        <p class="result-title" style="width: 85%">
           <xsl:choose>
             <xsl:when test="arr[@name = 'document_title']/str[contains(.,concat($language,'|'))]">
               <xsl:value-of select="substring-after(arr[@name = 'document_title']/str[contains(.,concat($language,'|'))],'|')"/>
@@ -161,23 +161,43 @@
             </xsl:otherwise>
           </xsl:choose>
         </p>
-        <a href="{kiln:url-for-match('local-epidoc-display-html', ($language, $short-filepath), 0)}"
+        <xsl:variable name="link">
+          <xsl:choose>
+            <xsl:when test="current-grouping-key() = 'IFEB'">
+              <xsl:value-of select="concat('https://ifeb.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
+            </xsl:when>
+            
+            <xsl:when test="normalize-space(current-grouping-key()) = 'Yavuz Tatış collection.'">
+              <xsl:value-of select="concat('https://tatis.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
+            </xsl:when>
+            <xsl:when test="current-grouping-key() = ''">
+              <xsl:value-of select="concat('https://ifeb.sigidoc.huma-num.fr','/fr/seals/', $short-filepath,'.html')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="kiln:url-for-match('local-epidoc-display-html', ($language, $short-filepath), 0)"/>
+            </xsl:otherwise>
+          </xsl:choose>
+        </xsl:variable>
+        <a href="{$link}"
           > view seal</a>
       </div>
       <div class="result-details hidden">
-        <p>
+      <span>
+      <p>
           <xsl:value-of select="arr[@name = 'translation']/str[1]"/>
         </p>
         <div class="result-metadata">
           <p class="period">
-            <b>period: </b>
+            <b>Date: </b>
             <xsl:value-of select="str[@name = 'origdate']"/>
           </p>
-          <p>
+          <!-- <p>
             <b>mentions: </b>
             <xsl:value-of select="arr[@name = 'personal_names']"/>
-          </p>
+          </p> -->
         </div>
+      </span>
+        
         <div class="thumbcontainer">
           <div class="img-text">
             <img class="thumbnail" src="/assets/images/snapshot1.jpg"/>
