@@ -15,9 +15,21 @@
     <kiln:block name="page-header">
       <div class="row">
         <div class="large-12 columns text-center">
-          <h1>
+          <h1 class="lp-h1">
             <i18n:text i18n:key="home-title"></i18n:text>
           </h1>
+          <h3 class="lp-h3"><i18n:text i18n:key="cologne">Köln</i18n:text></h3>
+          <div class="lp-h5-div text-left">
+          <h5><i18n:text i18n:key="home-editor">Edition der Siegel</i18n:text>: 
+           <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/filosa" target="_blank">Martina Filosa</a>,
+           <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/catalano" target="_blank">Maria Teresa Catalano</a>,
+           <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/evening" target="_blank">Pia Tabea Charlene Evening</a>,
+           <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/efthymoglou" target="_blank">Sofia Efthymoglou</a>
+           </h5>
+          <h5><i18n:text i18n:key="home-digi-editor">Digitale Edition</i18n:text>: 
+          <a href="" target="_blank">xx</a>
+          </h5>
+          </div>
         </div>
       </div>
     </kiln:block>
