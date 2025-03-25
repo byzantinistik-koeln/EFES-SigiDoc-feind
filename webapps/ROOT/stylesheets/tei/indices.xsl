@@ -118,7 +118,7 @@
   </xsl:template> 
   
   <xsl:template match="str[@name='index_ext_reference']"> <!--added by SigiDoc (Jan Bigalke) for external references in placeName and persName--> 
-    <td>
+    <td style="padding: 0px">
       <xsl:variable name="bibls">
         <xsl:choose>
           <xsl:when test="contains(./text(),'|')">
@@ -143,7 +143,9 @@
           </xsl:if>
           <text><xsl:value-of select="tokenize(.,'_')[1]"/></text>
           <link><xsl:value-of select="tokenize(.,'_')[2]"/></link>
-        </xsl:variable><p>
+        </xsl:variable>
+        <ul style="margin-bottom: 5px;">
+          <li>
           <span><xsl:value-of select="$tokens/name/text()"/></span>
           <a target="_blank">
             <xsl:attribute name="href">
@@ -151,7 +153,8 @@
             </xsl:attribute>
             <xsl:value-of select="$tokens/text/text()"/>
           </a>
-        </p>
+          </li>
+        </ul>
       </xsl:for-each>
     </td>
   </xsl:template>
