@@ -281,6 +281,10 @@ body {
     overflow: hidden;
 }
 
+.result-details span p {
+    text-align: left !important;
+}
+
 .hidden {
     display: none;
 }
