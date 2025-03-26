@@ -9,7 +9,7 @@
 
   <kiln:child>
     <kiln:block name="title">
-      <i18n:text>SigiDoc: Home</i18n:text>
+      <i18n:text>Feind: Home</i18n:text>
     </kiln:block>
 
     <kiln:block name="page-header">
@@ -23,11 +23,11 @@
           <h5><i18n:text i18n:key="home-editor">Edition der Siegel</i18n:text>: 
            <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/filosa" target="_blank">Martina Filosa</a>,
            <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/catalano" target="_blank">Maria Teresa Catalano</a>,
-           <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/evening" target="_blank">Pia Tabea Charlene Evening</a>,
-           <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/efthymoglou" target="_blank">Sofia Efthymoglou</a>
+           <a href="https://ifa.phil-fak.uni-koeln.de/en/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/sode" target="_blank">Claudia Sode</a>
            </h5>
           <h5><i18n:text i18n:key="home-digi-editor">Digitale Edition</i18n:text>: 
-          <a href="" target="_blank">xx</a>
+          <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/evening" target="_blank">Pia Tabea Charlene Evening</a>,
+          <a href="https://ifa.phil-fak.uni-koeln.de/mitarbeiterinnen/nach-abteilungen-einrichtungen/byzantinistik-und-neugriechische-philologie/efthymoglou" target="_blank">Sofia Efthymoglou</a>
           </h5>
           </div>
         </div>
@@ -94,11 +94,9 @@
             <div class="row">
               <div class="large-12 columns text-center">
                 <div class="panel radius">
-                  <p>The full bibliographical description of this publication: <strong>[to be changed by each project]</strong>,
-                    available at: <a target="_blank" href="https://feind.sigidoc.cceh.uni-koeln.de/en/">https://feind.sigidoc.cceh.uni-koeln.de/en/</a>.</p> 
-                  <p>This should be abbreviated to <strong>[to be changed by each project]</strong>.</p>
-                  <p>GitHub repository available <a href="https://github.com/SigiDoc/EFES-SigiDoc"
-                    target="_blank">https://github.com/SigiDoc/EFES-SigiDoc</a>.</p>
+                  <p>This edition should be cited as <strong>Sammlung Feind, Köln</strong>, available at <a target="_blank" href="https://feind.sigidoc.cceh.uni-koeln.de/en/">https://feind.sigidoc.cceh.uni-koeln.de/en/</a>.</p> 
+                  <p>GitHub repository available <a href="https://github.com/byzantinistik-koeln/EFES-SigiDoc-feind"
+                    target="_blank">https://github.com/byzantinistik-koeln/EFES-SigiDoc-feind</a>.</p>
                   <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                       <img alt="Creative Commons License" style="border-width:0"
                         src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
