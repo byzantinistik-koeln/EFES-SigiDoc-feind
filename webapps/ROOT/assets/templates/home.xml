@@ -38,6 +38,7 @@
       <main>
         <div class="row text-left">
           <div class="large-12 columns">
+          <img class="landing-img" src="/assets/images/seal.png"/>
             <div class="panel radius">
 
               <h4>Mission Statement</h4>
