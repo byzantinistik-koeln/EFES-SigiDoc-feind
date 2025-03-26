@@ -36,63 +36,67 @@
 
     <kiln:block name="content-section">
       <main>
-        <div class="row">
+        <div class="row text-left">
           <div class="large-12 columns">
-          <img class="landing-img" src="/assets/images/seal.png"/>
-          <!-- <div class="landing-page-container">
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+          <div class="landing-page-container">
+            <a href="{kiln:url-for-match('local-about', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/info_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> About </h3>
             <p>Learn more about this portal</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </a>
+            <a href="{kiln:url-for-match('local-search', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/database_search_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Search </h3>
             <p>Search the collections</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </a>
+            <a href="{kiln:url-for-match('local-collections', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/apps_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Collections </h3>
             <p>See all collections</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            </a>
+            <a href="{kiln:url-for-match('local-guidelines', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/auto_stories_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Guidelines </h3>
-            <p>More informations on how to encode</p>
-            </div>
-            <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <p>More information on how to search</p>
+            </a>
+            <a href="{kiln:url-for-match('local-team', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/groups_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
             <h3> Team </h3>
             <p>Get to know our team</p>
-            </div>
+            </a>
             <div class="landing-panel">
-            <img src="/assets/google-icons/download_24dp_562C2C_FILL0_wght400_GRAD0_opsz24.svg"/>
-            <h3> 2048 </h3>
+            <img class="panel-icon" src="/assets/google-icons/data_usage_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
+              <h3> <xsl:value-of select="count(//doc)"></xsl:value-of></h3>
             <p>Objects in all collections</p>
             </div>
-          </div> -->
+          </div> 
             <div class="panel radius">
-              
+
+              <h4>Mission Statement</h4>
               <!-- <div class="landing-img" id="site-title"></div> -->
-              <p>Seals are the only remnants of the written documents used for daily administration
-                and private correspondence from the 4th to the 15th C. in the Byzantine Empire –
-                i.e. the Christian eastern medieval empire centred upon Constantinople – whose
-                public and private archives are nearly entirely lost. As such seals do not
-                supplement archival material but have to substitute it, which explains the unique
-                importance of sigillography for Byzantine studies.</p>
-              <p>SigiDoc provides XML-based and TEI-compliant encoding standards for the description
-                and edition of Byzantine seals: as such, it aims to establish a set of rules and
-                guidelines to publish Byzantine seals in digital form. SigiDoc is intended for both
-                the creation of digital-born editions as well as digital conversion of paper
-                publications and has been conceived to provide the users with a common basis for
-                developing their projects and to give them the freedom to customise their
-                approach.</p>
-              <p>SigiDoc is largely based on the ongoing experience of EpiDoc and aims at becoming
-                the standard tool for the spreading of digital sigillography while delivering a
-                standard for the digital encoding of Byzantine seals. </p>
+              <p>Over 100,000 Byzantine seals are housed in a wide array of collections,
+               many of which are only partially published or presented across scattered books,
+               articles or platforms. For the first time, this Portal offers a unified entry point,
+               allowing these dispersed holdings to be comprehensively searched—and unlocking new avenues for research.</p>
+
+              <p>The lack of publicly accessible information on seals has long been a major gap in Byzantine sigillography.
+               This initiative responds to that need by offering a user-friendly and pragmatic platform for sharing data,
+                with minimal requirements for participation.</p>
+
+              <p>Every seal description remains clearly credited to its respective contributor,
+               who retains full responsibility for the content.</p>
+
+               <p>With CSÆB, you can search a metacorpus comprising potentially tens of thousands of seals from various collections—all in a single click.</p>
+            </div>
+            <div class="panel radius">
+              <h4>Getting started</h4>
+              <p>Get in touch with the DigiByzSeal project team.</p> <!--MAIL ODER WEBSITE-->
+              <p>We will support you in exploring the most suitable option and guide you in preparing your data to meet the minimal participation standards.</p>
+              <p>Our goal is to make contributing as easy and accessible as possible.</p>
+
             </div>
             <div class="row">
-              <div class="large-12 columns text-center">
+              <div class="large-12 columns">
                 <div class="panel radius">
                   <p>This edition should be cited as <strong>Sammlung Feind, Köln</strong>, available at <a target="_blank" href="https://feind.sigidoc.cceh.uni-koeln.de/en/">https://feind.sigidoc.cceh.uni-koeln.de/en/</a>.</p> 
                   <p>GitHub repository available <a href="https://github.com/byzantinistik-koeln/EFES-SigiDoc-feind"
@@ -100,9 +104,9 @@
                   <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
                       <img alt="Creative Commons License" style="border-width:0"
                         src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/>
-                    </a> This work is licensed under a <a rel="license"
+                    </a> Authorship remains fully attributed to the original author(s). The content is shared under a <a rel="license"
                       href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA
-                      License</a> (unless otherwise stated).</p>
+                      License</a>.</p>
                 </div>
               </div>
             </div>
