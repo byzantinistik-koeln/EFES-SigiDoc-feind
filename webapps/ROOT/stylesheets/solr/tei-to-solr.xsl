@@ -372,6 +372,10 @@
     <xsl:call-template name="field_translation"/>
     <xsl:call-template name="field_origDate"/>
     <xsl:call-template name="field_inv"/>
+<<<<<<< HEAD
+=======
+    
+>>>>>>> upstream/master
     <xsl:call-template name="field_imgr"/>
     <xsl:call-template name="field_imgv"/>
   </xsl:template>

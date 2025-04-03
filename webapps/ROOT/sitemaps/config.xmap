@@ -101,7 +101,11 @@
              the language of the site's templates etc. On a
              multilingual site, this is the language that is presented
              by default. Value is a language code. -->
+<<<<<<< HEAD
         <default-display-language>de</default-display-language>
+=======
+        <default-display-language>en</default-display-language>
+>>>>>>> upstream/master
         <eats-server>http://localhost:8000/</eats-server>
         <!-- If authentication tokens are required, provide them in
              the URL as per RFC 2396; eg,

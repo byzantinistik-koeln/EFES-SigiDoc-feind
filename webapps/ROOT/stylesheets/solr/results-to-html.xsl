@@ -191,6 +191,7 @@
           > view seal</a>
       </div>
       <div class="result-details hidden">
+<<<<<<< HEAD
         <span>
           <p>
             <xsl:value-of select="substring-after(arr[@name = 'translation']/str[contains(.,concat($language,'|'))],concat($language,'|'))"/>
@@ -207,6 +208,23 @@
                  <xsl:value-of select="arr[@name = 'origdate']/str"/>
                </p>
              </xsl:if>
+=======
+      <span>
+      <p>
+        <xsl:value-of select="substring-after(arr[@name = 'translation']/str[contains(.,concat($language,'|'))],concat($language,'|'))"/>
+        </p>
+        
+        <p>
+          <xsl:value-of select="substring-after(arr[@name = 'translation']/str[1],'|')"/>
+        </p>
+        <div class="result-metadata">
+          <xsl:if test="arr[@name='origdate']">
+          <p class="period">
+            <b>Date: </b>
+            <xsl:value-of select="arr[@name = 'origdate']/str"/>
+          </p>
+          </xsl:if>
+>>>>>>> upstream/master
           <!-- <p>
             <b>mentions: </b>
             <xsl:value-of select="arr[@name = 'personal_names']"/>
@@ -217,14 +235,24 @@
         <div class="thumbcontainer">
           <div class="img-text">
             <xsl:if test="str[@name='imgr']">
+<<<<<<< HEAD
               <img class="thumbnail" src="{str[@name='imgr']}"/>
               <figcaption class="thumbtext">obverse</figcaption>
+=======
+            <img class="thumbnail" src="{str[@name='imgr']}"/>
+            <figcaption class="thumbtext">obverse</figcaption>
+>>>>>>> upstream/master
             </xsl:if>
           </div>
           <div class="img-text">
             <xsl:if test="str[@name='imgv']">
+<<<<<<< HEAD
               <img class="thumbnail" src="{str[@name='imgv']}"/>
               <figcaption class="thumbtext">reverse</figcaption>
+=======
+            <img class="thumbnail" src="{str[@name='imgv']}"/>
+            <figcaption class="thumbtext">reverse</figcaption>
+>>>>>>> upstream/master
             </xsl:if>
           </div>
         </div>

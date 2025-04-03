@@ -38,6 +38,41 @@
       <main>
         <div class="row text-left">
           <div class="large-12 columns">
+<<<<<<< HEAD
+=======
+          <!-- <div class="landing-page-container">
+            <a href="{kiln:url-for-match('local-about', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/info_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> About </h3>
+            <p>Learn more about this portal</p>
+            </a>
+            <a href="{kiln:url-for-match('local-search', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/database_search_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> Search </h3>
+            <p>Search the collections</p>
+            </a>
+            <a href="{kiln:url-for-match('local-collections', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/apps_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> Collections </h3>
+            <p>See all collections</p>
+            </a>
+            <a href="{kiln:url-for-match('local-guidelines', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/auto_stories_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> Guidelines </h3>
+            <p>More information on how to search</p>
+            </a>
+            <a href="{kiln:url-for-match('local-team', ($language, ()), 0)}" target="_blank" class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/groups_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
+            <h3> Team </h3>
+            <p>Get to know our team</p>
+            </a>
+            <div class="landing-panel">
+            <img class="panel-icon" src="/assets/google-icons/data_usage_24dp_45658B_FILL0_wght400_GRAD0_opsz24.svg"/>
+              <h3> <xsl:value-of select="count(//doc)"></xsl:value-of></h3>
+            <p>Objects in all collections</p>
+            </div>
+          </div>  -->
+>>>>>>> upstream/master
           <img class="landing-img" src="/assets/images/seal.png"/>
             <div class="panel radius">
 

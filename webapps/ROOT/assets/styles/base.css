@@ -160,7 +160,11 @@ ul.index-instances {
     margin-bottom: 20px;
     margin-top: 20px;
     width: 50%;
+<<<<<<< HEAD
     margin-left: 25%
+=======
+    margin-left: 25%;
+>>>>>>> upstream/master
 }
 
 .lp-h1 {
@@ -299,6 +303,7 @@ body {
     padding: 0 18px;
     background-color: #efefef;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .result-details span p {
